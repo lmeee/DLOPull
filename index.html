@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="DLO Insertion">
+        content="DLO Routing">
   <meta name="keywords" content="Reinforcement learning, robot learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DLOinsert</title>
+  <title>DLOrouting</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
 
     <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -45,8 +45,8 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            Learning for Deformable Linear Object Insertion Leveraging Flexibility
-            Estimation from Visual Cues      
+            Routing Manipulation of Deformable Linear Object Using
+            Reinforcement Learning and Diffusion Policy    
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
 <div class="container is-max-desktop">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
-      <h2 class="title is-13">Mingen Li  and Changhyun Choi</h2>
+      <h2 class="title is-13">Mingen Li, Houjian Yu and Changhyun Choi</h2>
       <div class="content has-text-justified">
 
       </div>
@@ -72,13 +72,14 @@
       <h2 class="title is-2">Abstract</h2>
       <div class="content has-text-justified">
         <p>
-          Manipulation of deformable Linear objects (DLOs), including iron wire, rubber, silk, and nylon rope, is ubiquitous in daily life.
-          These objects exhibit diverse physical properties, such as Young's modulus and bending stiffness. Such diversity poses challenges for developing generalized manipulation policies.
-          However, previous research limited their scope to single-material DLOs and engaged in time-consuming data collection for the state estimation. 
-          In this paper, we propose a two-stage manipulation approach consisting of a material property (e.g., flexibility) estimation and policy learning for DLO insertion with reinforcement learning. Firstly, we design a flexibility estimation scheme that characterizes the properties of different types of DLOs. The ground truth flexibility data is collected in simulation to train our flexibility estimation module. 
-          During the manipulation, the robot interacts with the DLOs to estimate flexibility by analyzing their visual configurations. 
-          Secondly, we train a policy conditioned on the estimated flexibility to perform challenging DLO insertion tasks.
-          Our pipeline trained with diverse insertion scenarios achieves an 85.6% success rate in simulation and 66.67% in real robot experiments.
+          Tasks involving deformable linear objects (DLOs) are prevalent in daily life but pose significant challenges due to their infinite degrees of freedom and underactuated nature. 
+          Frequent contact between DLOs and surrounding objects with unknown physical parameters, such as friction, further complicates their manipulation.
+          Performing tasks like routing ropes through a hole requires gentle yet robust manipulation, making it particularly challenging.
+          Previous research has not adequately addressed general DLO manipulation tasks that involve intensive contact, especially in environments with rough surfaces.
+          This paper presents a robust and delicate manipulation learning approach for the DLO routing task, leveraging reinforcement learning and diffusion policy. 
+          First, reinforcement learning agents are trained separately for rope insertion and pulling. During training, the agents are encouraged to minimize rope tension throughout task 
+          execution in environments with randomized friction to achieve delicate motion. Next, the rollouts from these agents are collected as expert demonstrations to train a diffusion policy. 
+          Our approach generates delicate motions to prevent the rope from being damaged or getting stuck on rough surfaces while remaining robust against environmental disturbances.
          </p>
       </div>
     </div>
@@ -93,7 +94,7 @@
         <h2 class="title is-2">Video</h2>
         <div class="content has-text-justified">
           <video id="generalvideo" controls muted loop playsinline height="100%">
-            <source src="static/videos/finalicra.mp4" type="video/mp4">
+            <source src="static/videos/icra-updated-speed.mp4" type="video/mp4">
           </video>
         </div>
       </div>
