@@ -127,7 +127,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <p>
-          The following experiment shows the evaluation result for Ours w/ f for fix theta and random theta.
+          The following experiment shows the evaluation result for RL w/o rand mu with no disturbance and diffusion policy with ring displacement.
         </p>
 
      
@@ -141,7 +141,7 @@
     <div class="columns is-centered">
       <div class="column is-one-second">
         <!-- <h3 class="title is-4">Insertion</h3> -->
-        <img src="static/videos/fixobsstat_42000.gif" alt="this slowpoke moves"  width="400" />
+        <img src="static/videos/rolloutsmall-ezgif.com-speed.gif" alt="this slowpoke moves"  width="400" />
 
         <br>
         
@@ -151,7 +151,7 @@
       </div>
       <div class="column is-one-second">
 
-        <img src="static/videos/randobsstat_50000.gif" alt="this slowpoke moves"  width="400" />
+        <img src="static/videos/rolloutdisturbsmall-ezgif.com-speed.gif" alt="this slowpoke moves"  width="400" />
 
 
         <br>
@@ -208,12 +208,23 @@
     </div>
   </div>
   
+
   <div class="container is-max-fullhd">
     <div class="columns is-centered">
       <div class="column is-one-second">
-        <!-- <h3 class="title is-4">Insertion</h3> -->
+        <h3 class="title is-4">Full Routing Precedure</h3>
         <video id="pivoting-1" controls muted loop autoplay playsinline height="100%">
-          <source src="static/videos/fixobs3rope4.mp4" type="video/mp4">
+          <source src="static/videos/cut_softnylonfull.mp4" type="video/mp4">
+        </video>
+        <br>
+  </div>
+
+  <div class="container is-max-fullhd">
+    <div class="columns is-centered">
+      <h3 class="title is-4">Rope Pulling Evaluation</h3>
+      <div class="column is-one-second">
+        <video id="pivoting-1" controls muted loop autoplay playsinline height="100%">
+          <source src="static/videos/cut-cable_speed.mp4" type="video/mp4">
         </video>
         <br>
        
@@ -223,7 +234,7 @@
       </div>
       <div class="column is-one-second">
         <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
-          <source src="static/videos/randobs2_up1.1420_rope5.mp4" type="video/mp4">
+          <source src="static/videos/cut-rubber_speed.mp4" type="video/mp4">
         </video>
         <br>
        
@@ -232,16 +243,44 @@
 
       <div class="column is-one-second">
         <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
-          <source src="static/videos/randobs2_down1.9778_rope1.mp4" type="video/mp4">
+          <source src="static/videos/cut-thicknylon_speed.mp4" type="video/mp4">
         </video>
         <br>
-       
-      
+      </div>
+
+      <div class="column is-one-second">
+        <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
+          <source src="static/videos/cut-threadpull_speed.mp4" type="video/mp4">
+        </video>
+        <br>
       </div>
     </div>
   
   </div>
 
+
+  <div class="container is-max-fullhd">
+    <div class="columns is-centered">
+      <h3 class="title is-4">Visual baseline Evaluation</h3>
+      <div class="column is-one-second">
+        <video id="pivoting-1" controls muted loop autoplay playsinline height="100%">
+          <source src="static/videos/cut-vbcable_speed.mp4" type="video/mp4">
+        </video>
+        <br>
+       
+        
+      
+        
+      </div>
+      <div class="column is-one-second">
+        <video id="pivoting-3" controls muted loop autoplay playsinline height="100%">
+          <source src="static/videos/cut-vbcoil_speed.mp4" type="video/mp4">
+        </video>
+        <br>
+       
+      
+      </div>
+  </div>
 
 
 
